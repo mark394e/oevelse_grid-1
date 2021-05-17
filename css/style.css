@@ -28,6 +28,8 @@ section {
 /* ========== article ========== */
 article {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .content > p {
@@ -40,9 +42,24 @@ p + figure {
 
 /* ========== gallery ========== */
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
 }
 
 .gallery img {
   height: 100%;
   object-fit: cover;
 }
+
+/* @media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
