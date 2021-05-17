@@ -38,6 +38,7 @@ article {
 
 p + figure {
   margin-top: 1rem;
+  color: red;
 }
 
 /* ========== gallery ========== */
