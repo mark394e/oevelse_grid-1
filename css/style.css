@@ -29,6 +29,7 @@ section {
 article {
   grid-column: 2;
   display: grid;
+  font-display: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
